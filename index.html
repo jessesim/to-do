@@ -63,12 +63,15 @@
             padding: 10px 0;
             border-bottom: 1px solid #ccc;
         }
+        span {
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>To-Do List</h1>
-        <input type="text" id="taskInput" placeholder="Add a new task" />
+        <input type="text" id="taskInput" placeholder="Add a new task" maxlength="21" />
         <button class="add-btn" onclick="addTask()">Add</button>
         <ul id="taskList"></ul>
     </div>
